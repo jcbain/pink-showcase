@@ -1,0 +1,88 @@
+baseurl = "/"
+languageCode = "en-us"
+title = "pink plesiosaur"
+theme = "pink-plesiosaur-theme"
+googleAnalytics = ""
+disqusShortname = ""
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+paginate = 1
+
+[permalinks]
+    post = "/:year/:monthname/:slug/"
+
+
+[[menu.main]]
+    name = "about"
+    url = "/about"
+    weight = 3 # lower weight means higher priority in terms of arrangement
+[[menu.main]]
+    name = "blog"
+    url = "/post"
+    weight = 5
+[[menu.main]]
+    name = "contact"
+    url = "/contact"
+    weight = 4
+[[menu.main]]
+    name = "cv"
+    url = "/cv"
+    weight = 6
+#[[menu.main]]
+#    name = "Logo"
+#    url = "/"
+#    weight = 1
+#    img = "/images/plesiosaur_tri_color.png"
+
+[params]
+    welcomeMessage = "hi there! i'm james"
+    description = "i'm a computational anthropologist & data visualization researcher postdocing at the university of calgary"
+    address = "444 Something Street"
+    city = "Calgary, AB TTT TTT"
+
+    # options for highlight.js (version, additional languages, and theme)
+    highlightjsVersion = "9.12.0"
+    highlightjsCDN = "//cdnjs.cloudflare.com/ajax/libs"
+    highlightjsLang = ["r", "yaml"]
+    highlightjsTheme = "github"
+
+    MathJaxCDN = "//cdnjs.cloudflare.com/ajax/libs"
+    MathJaxVersion = "2.7.5"
+
+    # path to the favicon, under "static"
+    favicon = "/images/favicon.png"
+
+    [params.logo]
+        url = "/images/plesiosaur_tri_color.png"
+        width = 120
+        height = 120
+        alt = "logo"
+    
+    # Custom CSS
+    custom_css = []
+    
+    # Custom JS
+    custom_js = []
+    
+[[params.social]]
+    name = "Github"
+    icon = "fab fa-github fa-2x"
+    weight = 1
+    url = "https://github.com/jcbain/"
+[[params.social]]
+    name = "Twitter"
+    icon = "fab fa-twitter fa-2x"
+    weight = 3
+    url = "https://twitter.com/gymbrane/"
+[[params.social]]
+    name = "LinkedIn"
+    icon = "fab fa-linkedin fa-2x"
+    weight = 4
+    url = "https://www.linkedin.com/in/james-c-bain/"
+[[params.social]]
+    name = "Pinterest"
+    icon = "fab fa-pinterest fa-2x"
+    weigth = 5
+    url = "https://www.pinterest.com/jchesterbain/"
+
+
+

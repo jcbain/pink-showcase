@@ -1,0 +1,21 @@
+{
+	"version": 3,
+	"file": "stylez.css",
+	"sourceRoot": "/Users/jamesbain/Documents/websites/pink_showcase",
+	"sources": [
+		"themes/pink-plesiosaur-theme/assets/scss/main.scss",
+		"themes/pink-plesiosaur-theme/assets/scss/_variables.scss",
+		"themes/pink-plesiosaur-theme/assets/scss/_base.scss",
+		"themes/pink-plesiosaur-theme/assets/scss/_header.scss",
+		"themes/pink-plesiosaur-theme/assets/scss/_index.scss"
+	],
+	"sourcesContent": [
+		"@import \"variables\";\n@import \"base\";\n@import \"header\";\n@import \"index\";",
+		"$color_pink      : #fdadb7;\n$color_mint      : #b4dbc0;\n$color_dark_mint : #84a38d;\n$color_yellow    : #ebdb0f;\n$color_cream     : #fffff7;",
+		"html {\n    margin: 0;\n    padding: 0;\n  }\n  \n  body {\n    background-color: $color_cream;\n    padding: 0;\n    margin: 0;\n  }",
+		"/* colors\npink: #fdadb7;\nmint: #b4dbc0;\ndark-mint: #84a38d;\nyellow: #ebdb0f;\ncream: #fffff7;\n */\n\n\n/* HEADER */\n\n.navbar-container {\n  display: grid;\n  grid-template-rows: 1fr;\n  grid-template-columns: repeat(7, 1fr);\n  height: 120px;\n}\n\n.navitem {\n  justify-self: center;\n}\n\n.navtext {\n      padding-top: 60px;\n      font-family: 'Righteous';\n      font-size: 20px;\n  }\n  \n  a {\n    text-decoration: none;\n    color: $color_pink;\n}\n\n\n",
+		"/* INDEX */\n\n.welcome-container {\n    display: grid;\n    grid-template-columns: 0.25fr 1fr 0.25fr;\n    grid-template-rows: 25vh 35vh;\n    justify-items: center;\n    background-color: $color_mint;\n  }\n  \n  .empty.left{\n    grid-row: 1 / 2;\n    grid-column: 1 / 2;\n  }\n  \n  .empty.right{\n    grid-row: 1 / 2;\n    grid-column: 3 / 4;\n  }\n  \n  .welcome {\n    font-family: 'Londrina Outline', cursive;\n    font-size: 100px;\n    color: $color_cream;\n    grid-row: 1 / 2;\n    grid-column: 2 / 3;\n    text-align: center;\n  }\n  \n  .description{\n    font-family: 'Londrina Solid', sans-serif;\n    font-size: 30px;\n    color: $color_dark_mint;\n    grid-row: 2 / 3;\n    grid-column: 2 / 3;\n    text-align: center;\n  }"
+	],
+	"names": [],
+	"mappings": "AEAA,AAAA,IAAI,CAAC;EACD,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC,GACX;;AAED,AAAA,IAAI,CAAC;EACH,gBAAgB,EDFD,OAAO;ECGtB,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC,GACV;;ACTH;;;;;;GAMG;AAGH,YAAY;AAEZ,AAAA,iBAAiB,CAAC;EAChB,OAAO,EAAE,IAAI;EACb,kBAAkB,EAAE,GAAG;EACvB,qBAAqB,EAAE,cAAc;EACrC,MAAM,EAAE,KAAK,GACd;;AAED,AAAA,QAAQ,CAAC;EACP,YAAY,EAAE,MAAM,GACrB;;AAED,AAAA,QAAQ,CAAC;EACH,WAAW,EAAE,IAAI;EACjB,WAAW,EAAE,WAAW;EACxB,SAAS,EAAE,IAAI,GAClB;;AAED,AAAA,CAAC,CAAC;EACA,eAAe,EAAE,IAAI;EACrB,KAAK,EF9BU,OAAO,GE+BzB;;AC/BD,WAAW;AAEX,AAAA,kBAAkB,CAAC;EACf,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,iBAAiB;EACxC,kBAAkB,EAAE,SAAS;EAC7B,aAAa,EAAE,MAAM;EACrB,gBAAgB,EHND,OAAO,GGOvB;;AAED,AAAA,MAAM,AAAA,KAAK,CAAA;EACT,QAAQ,EAAE,KAAK;EACf,WAAW,EAAE,KAAK,GACnB;;AAED,AAAA,MAAM,AAAA,MAAM,CAAA;EACV,QAAQ,EAAE,KAAK;EACf,WAAW,EAAE,KAAK,GACnB;;AAED,AAAA,QAAQ,CAAC;EACP,WAAW,EAAE,2BAA2B;EACxC,SAAS,EAAE,KAAK;EAChB,KAAK,EHnBU,OAAO;EGoBtB,QAAQ,EAAE,KAAK;EACf,WAAW,EAAE,KAAK;EAClB,UAAU,EAAE,MAAM,GACnB;;AAED,AAAA,YAAY,CAAA;EACV,WAAW,EAAE,4BAA4B;EACzC,SAAS,EAAE,IAAI;EACf,KAAK,EH9BU,OAAO;EG+BtB,QAAQ,EAAE,KAAK;EACf,WAAW,EAAE,KAAK;EAClB,UAAU,EAAE,MAAM,GACnB"
+}
