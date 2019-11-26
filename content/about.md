@@ -4,4 +4,4 @@ title: About
 author: James Bain
 ---
 
-This is a "hello world" example website for the [**blogdown**](https://github.com/rstudio/blogdown) package. The theme was forked from [@jrutheiser/hugo-lithium-theme](https://github.com/jrutheiser/hugo-lithium-theme) and modified by [Yihui Xie](https://github.com/yihui/hugo-lithium).
+This is a placeholder for the About page for James Bain using the [pink plesiosaur theme](github.com/jcabin/pink-plesiosaur-theme).

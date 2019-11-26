@@ -38,6 +38,9 @@ paginate = 1
     description = "i'm a computational anthropologist & data visualization researcher postdocing at the university of calgary"
     address = "444 Something Street"
     city = "Calgary, AB TTT TTT"
+    
+    copyrightPerson = "pink plesiosaur"
+    copyrightURL = "https://github.com/jcbain/pink-plesiosaur-theme"
 
     # options for highlight.js (version, additional languages, and theme)
     highlightjsVersion = "9.12.0"
@@ -83,6 +86,7 @@ paginate = 1
     icon = "fab fa-pinterest fa-2x"
     weigth = 5
     url = "https://www.pinterest.com/jchesterbain/"
+
 
 
 
