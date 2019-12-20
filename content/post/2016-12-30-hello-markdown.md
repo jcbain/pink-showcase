@@ -3,7 +3,7 @@ date: "2016-12-30T21:49:57-07:00"
 title: A Plain Markdown Post
 categories: [R, something]
 author: Gato Deluxe
-image: "/images/post_02.jpg"
+image: "/images/wolf.png"
 ---
 
 This is a post written in plain Markdown (`*.md`) instead of R Markdown (`*.Rmd`). The major differences are:
