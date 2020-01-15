@@ -20,7 +20,7 @@ cloudDiv.addEventListener('mousemove', event => {
     makeCloudFloat(mouseX, mouseY, cloud1);
     makeCloudFloat(mouseX, mouseY, cloud2, sensitivity=0.01, xDirection=-1);
     makeCloudFloat(mouseX, mouseY, cloud3, sensitivity=0.02, yDirection=1);
-    makeCloudFloat(mouseX, mouseY, cloud4, sensitivity=0.05, xDirection=-1);
+    makeCloudFloat(mouseX, mouseY, cloud4, sensitivity=0.06, xDirection=-1, yDirection=1);
     makeCloudFloat(mouseX, mouseY, cloud5, sensitivity=0.01);
     makeCloudFloat(mouseX, mouseY, cloud6);
     makeCloudFloat(mouseX, mouseY, cloud7, sensitivity=0.01, xDirection=-1);
