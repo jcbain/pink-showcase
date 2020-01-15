@@ -6,6 +6,8 @@ googleAnalytics = ""
 disqusShortname = "jamescbain"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 paginate = 1
+pygmentsCodeFences = true
+pygmentsStyle = "solarized-light"
 
 [permalinks]
     post = "/:year/:monthname/:slug/"
@@ -13,20 +15,15 @@ paginate = 1
 
 [params]
     welcomeMessage = "I'm James"
-    description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor magna eget est lorem ipsum dolor sit amet. Amet est placerat in egestas erat imperdiet sed. Feugiat pretium nibh ipsum consequat. Massa sapien faucibus et molestie ac feugiat sed lectus. Dolor sit amet consectetur adipiscing elit. Amet massa vitae tortor condimentum lacinia quis. Nisl pretium fusce id velit ut tortor pretium. Imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper. Eu non diam phasellus vestibulum. </br>Eu feugiat pretium nibh ipsum consequat nisl. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. Aenean et tortor at risus viverra adipiscing at in tellus. Facilisi morbi tempus iaculis urna id volutpat lacus. Amet nisl suscipit adipiscing bibendum. Ultricies mi eget mauris pharetra et ultrices neque. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in dictum. Sapien pellentesque habitant morbi tristique senectus et. Nec ullamcorper sit amet risus nullam eget felis eget. Accumsan in nisl nisi scelerisque. Tellus orci ac auctor augue mauris augue neque. Diam quis enim lobortis scelerisque fermentum dui. Mattis molestie a iaculis at erat pellentesque adipiscing commodo. Tincidunt dui ut ornare lectus sit amet est placerat in."
+    description = "I am a Computational Anthropologist currently disguised in Biology department as Postdoctoral Associate at the University of Calgary in <a target='_blank' href='https://yeamanlab.weebly.com/' class='link'>Sam Yeaman's lab</a>. I made the trek from the Midwestern United States to Canadadian Rockies to design and build a visualization atlas of complex evolutionary phenomena (biological and otherwise). As a researcher, I am interested in how city composition, human interaction and geography can influence peoples' behaviors and perceptions of others. I am also keen on understanding how the social sciences can leverage machine learning and computation to help answer these questions about human behavior. </br>If I am not in front of my computer then I can often be found in one of few situations: in the mountains with my wife and the pups, cooking or fermenting foodstuffs, or watching The Office, Gilmore Girls or anything from the Bachelor franchise. Doodling has also made its way back into my post-PhD life."
 
     blogMessage = "I also blog from time to time"
-    blogDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor magna eget est lorem ipsum dolor sit amet. Amet est placerat in egestas erat imperdiet sed. Feugiat pretium nibh ipsum consequat. Massa sapien faucibus et molestie ac feugiat sed lectus. Dolor sit amet consectetur adipiscing elit. Amet massa vitae tortor condimentum lacinia quis. Nisl pretium fusce id velit ut tortor pretium. Imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper. Eu non diam phasellus vestibulum."
+    blogDescription = "Here are some of my most recent posts. I typically blog on data viz or machine learning as these are the topics I spend most of my day exploring, but don't be surprised if you catch a smattering of posts on design, pop culture or my fermentation undertakings."
     
     copyrightPerson = "pink plesiosaur"
     copyrightURL = "https://github.com/jcbain/pink-plesiosaur-theme"
-
-    # options for highlight.js (version, additional languages, and theme)
-    highlightjsVersion = "9.12.0"
-    highlightjsCDN = "//cdnjs.cloudflare.com/ajax/libs"
-    highlightjsLang = ["r", "yaml"]
-    highlightjsTheme = "github"
-
+    
+    disableMathJax = false
     MathJaxCDN = "//cdnjs.cloudflare.com/ajax/libs"
     MathJaxVersion = "2.7.5"
 

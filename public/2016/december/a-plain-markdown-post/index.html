@@ -20,7 +20,7 @@
     
     
         
-    <link rel="stylesheet" href="/css/main.min.7564e30080b2ed467c5a9b260ca962d0b32b0e569afe4bc176df51fd994df6b2.css" integrity="sha256-dWTjAICy7UZ8WpsmDKli0LMrDlaa/kvBdt9R/ZlN9rI=" crossorigin="anonymous" media="screen" />
+    <link rel="stylesheet" href="/css/main.min.a96757855ccc42e6cb4f47278fe69aff28f31e7f72056ec8a0227bba4e99f385.css" integrity="sha256-qWdXhVzMQubLT0cnj&#43;aa/yjzHn9yBW7IoCJ7uk6Z84U=" crossorigin="anonymous" media="screen" />
 
     
     
@@ -28,6 +28,13 @@
     
 
     <link rel="icon" type="image/png" href="/images/dog_favicon.png" sizes="32x32">
+
+    
+
+
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
 </head><body><header>
     <div id="title-container">
         <h2 id="title">
@@ -37,27 +44,39 @@
 
     <div id="icon-container">
         
+        
         <a href="https://github.com/jcbain/" target="_blank" aria-label="Github" >
+        
             <i class="fab fa-github fa-2x"></i>
         </a>
         
+        
         <a href="https://twitter.com/gymbrane/" target="_blank" aria-label="Twitter" >
+        
             <i class="fab fa-twitter fa-2x"></i>
         </a>
         
+        
         <a href="https://www.linkedin.com/in/james-c-bain/" target="_blank" aria-label="LinkedIn" >
+        
             <i class="fab fa-linkedin fa-2x"></i>
         </a>
         
+        
         <a href="https://www.pinterest.com/jchesterbain/" target="_blank" aria-label="Pinterest" >
+        
             <i class="fab fa-pinterest fa-2x"></i>
         </a>
         
+        
         <a href="https://www.instagram.com/jamescbain/" target="_blank" aria-label="Instagram" >
+        
             <i class="fab fa-instagram fa-2x"></i>
         </a>
         
-        <a href="/post" target="_blank" aria-label="Blog" >
+        
+        <a href="/post" aria-label="Blog" >
+        
             <i class="fas fa-blog fa-2x"></i>
         </a>
         
@@ -70,8 +89,18 @@
   <div class="single-meta">
     <h3 class="single-author">by: Gato Deluxe</h3>
     <h3 class="single-date">Friday Dec 30, 2016</h3>
-    <p class="single-wordc">280 words </p>
+    <p class="single-wordc">281 words </p>
 
+  </div>
+  <div class="single-categories">
+    
+    <p>categories </p>
+        
+        <p><a class="link" href="/categories/r">R</a></p>
+        
+        <p><a class="link" href="/categories/something">something</a></p>
+        
+    
   </div>
 
   <div class="single-tags">
@@ -97,11 +126,10 @@
 
 <p>Similarly, Blackfriday does not support LaTeX math and Pandoc does. I have added the MathJax support to this theme (<a href="https://github.com/yihui/hugo-lithium">hugo-lithium</a>) but there is a caveat for plain Markdown posts: you have to include math expressions in a pair of backticks (inline: <code>`$ $`</code>; display style: <code>`$$ $$`</code>), e.g., <code>$S_n = \sum_{i=1}^n X_i$</code>.<sup class="footnote-ref" id="fnref:This-is-because"><a href="#fn:This-is-because">1</a></sup> For R Markdown posts, you do not need the backticks, because Pandoc can identify and process math expressions.</p>
 
-<p>When creating a new post, you have to decide whether the post format is Markdown or R Markdown, and this can be done via the <code>ext</code> argument of the function <code>blogdown::new_post()</code>, e.g.</p>
+<p>$$S_n$$</p>
 
-<pre><code class="language-r">blogdown::new_post(&quot;Post Title&quot;, ext = '.Rmd')
-</code></pre>
-<div class="footnotes">
+<p>When creating a new post, you have to decide whether the post format is Markdown or R Markdown, and this can be done via the <code>ext</code> argument of the function <code>blogdown::new_post()</code>, e.g.</p>
+<div class="highlight"><pre style="color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">blogdown::new_post(<span style="color:#2aa198">&#34;Post Title&#34;</span>, ext = <span style="color:#2aa198">&#39;.Rmd&#39;</span>)</code></pre></div><div class="footnotes">
 
 <hr />
 
@@ -112,30 +140,20 @@
 
   </div>
 
-  <div class="single-categories">
-    
-    <p>categories: </p>
-        
-        <p><a class="link" href="/categories/r">R</a></p>
-        
-        <p><a class="link" href="/categories/something">something</a></p>
-        
-    
-  </div>
-
- 
-
   <div class="single-other">
+    <h3>Why stop here? Keep reading...</h3>
+    <div class="single-other-opts">
     
-    <p>Previous post:
-      <a class="previous" href="/2015/july/hello-r-markdown/"> Hello R Markdown</a>
+    <p>previous post:
+      <a class="previous link" href="/2015/july/hello-r-markdown/"> Hello R Markdown</a>
     </p>
-  
-  
-    <p>Next post: 
-      <a class="next" href="/2019/november/plesiosaur/"> Plesiosaur</a>
+    
+    
+    <p>next post: 
+      <a class="next link" href="/2019/november/plesiosaur/"> Plesiosaur</a>
     </p>
-  
+    
+    </div>
   </div>
 
   <div class="single-disqus">

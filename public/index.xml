@@ -30,15 +30,6 @@
     </item>
     
     <item>
-      <title>Contact</title>
-      <link>/contact/</link>
-      <pubDate>Wed, 06 Nov 2019 13:04:51 -0700</pubDate>
-      
-      <guid>/contact/</guid>
-      <description>This is just sample text for the contact page</description>
-    </item>
-    
-    <item>
       <title>A Plain Markdown Post</title>
       <link>/2016/december/a-plain-markdown-post/</link>
       <pubDate>Fri, 30 Dec 2016 21:49:57 -0700</pubDate>
@@ -46,15 +37,6 @@
       <guid>/2016/december/a-plain-markdown-post/</guid>
       <description>This is a post written in plain Markdown (*.md) instead of R Markdown (*.Rmd). The major differences are:
  You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (```{r}); A plain Markdown post is rendered through Blackfriday, and an R Markdown document is compiled by rmarkdown and Pandoc.  There are many differences in syntax between Blackfriday&amp;rsquo;s Markdown and Pandoc&amp;rsquo;s Markdown.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>/about/</link>
-      <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
-      
-      <guid>/about/</guid>
-      <description>This is a placeholder for the About page for James Bain using the pink plesiosaur theme.</description>
     </item>
     
     <item>
