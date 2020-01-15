@@ -1,6 +1,6 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "pink plesiosaur"
+title = "James Chester Bain, PhD"
 theme = "pink-plesiosaur-theme"
 googleAnalytics = ""
 disqusShortname = ""
@@ -11,22 +11,22 @@ paginate = 1
     post = "/:year/:monthname/:slug/"
 
 
-[[menu.main]]
-    name = "about"
-    url = "/about"
-    weight = 3 # lower weight means higher priority in terms of arrangement
-[[menu.main]]
-    name = "blog"
-    url = "/post"
-    weight = 5
-[[menu.main]]
-    name = "contact"
-    url = "/contact"
-    weight = 4
-[[menu.main]]
-    name = "cv"
-    url = "/cv"
-    weight = 6
+#[[menu.main]]
+#    name = "about"
+#    url = "/about"
+#    weight = 3 # lower weight means higher priority in terms of arrangement
+#[[menu.main]]
+#    name = "blog"
+#    url = "/post"
+#    weight = 5
+#[[menu.main]]
+#    name = "contact"
+#    url = "/contact"
+#    weight = 4
+#[[menu.main]]
+#    name = "cv"
+#    url = "/cv"
+#    weight = 6
 #[[menu.main]]
 #    name = "Logo"
 #    url = "/"
@@ -34,8 +34,8 @@ paginate = 1
 #    img = "/images/plesiosaur_tri_color.png"
 
 [params]
-    welcomeMessage = "hi there! i'm james"
-    description = "i'm a computational anthropologist & data visualization researcher postdocing at the university of calgary"
+    welcomeMessage = "I'm James"
+    description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor magna eget est lorem ipsum dolor sit amet. Amet est placerat in egestas erat imperdiet sed. Feugiat pretium nibh ipsum consequat. Massa sapien faucibus et molestie ac feugiat sed lectus. Dolor sit amet consectetur adipiscing elit. Amet massa vitae tortor condimentum lacinia quis. Nisl pretium fusce id velit ut tortor pretium. Imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper. Eu non diam phasellus vestibulum. /nEu feugiat pretium nibh ipsum consequat nisl. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. Aenean et tortor at risus viverra adipiscing at in tellus. Facilisi morbi tempus iaculis urna id volutpat lacus. Amet nisl suscipit adipiscing bibendum. Ultricies mi eget mauris pharetra et ultrices neque. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in dictum. Sapien pellentesque habitant morbi tristique senectus et. Nec ullamcorper sit amet risus nullam eget felis eget. Accumsan in nisl nisi scelerisque. Tellus orci ac auctor augue mauris augue neque. Diam quis enim lobortis scelerisque fermentum dui. Mattis molestie a iaculis at erat pellentesque adipiscing commodo. Tincidunt dui ut ornare lectus sit amet est placerat in."
     address = "444 Something Street"
     city = "Calgary, AB TTT TTT"
     
@@ -53,40 +53,37 @@ paginate = 1
 
     # path to the favicon, under "static"
     favicon = "/images/favicon.png"
-
-    [params.logo]
-        url = "/images/plesiosaur_tri_color.png"
-        width = 120
-        height = 120
-        alt = "logo"
     
     # Custom CSS
     custom_css = []
     
     # Custom JS
     custom_js = []
-    
+ 
 [[params.social]]
     name = "Github"
     icon = "fab fa-github fa-2x"
-    weight = 1
-    url = "https://github.com/jcbain/"
+    url = "https://github.com/jcbain/"   
 [[params.social]]
     name = "Twitter"
     icon = "fab fa-twitter fa-2x"
-    weight = 3
     url = "https://twitter.com/gymbrane/"
 [[params.social]]
     name = "LinkedIn"
     icon = "fab fa-linkedin fa-2x"
-    weight = 4
     url = "https://www.linkedin.com/in/james-c-bain/"
 [[params.social]]
     name = "Pinterest"
     icon = "fab fa-pinterest fa-2x"
-    weigth = 5
     url = "https://www.pinterest.com/jchesterbain/"
-
+[[params.social]]
+    name = "Instagram"
+    icon = "fab fa-instagram fa-2x"
+    url = "https://www.instagram.com/jamescbain/"
+[[params.social]]
+    name = "Blog"
+    icon = "fas fa-blog fa-2x"
+    url = "/post"
 
 
 
