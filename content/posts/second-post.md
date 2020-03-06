@@ -3,7 +3,7 @@ title: "Second Post"
 date: 2020-02-20T10:38:40-07:00
 author: "James Bain"
 image: "images/boog_scarf.JPG"
-draft: true
+draft: false
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque viverra justo nec ultrices dui sapien eget mi. Ultrices dui sapien eget mi proin. Ac tortor vitae purus faucibus. Ut venenatis tellus in metus vulputate eu. Imperdiet dui accumsan sit amet nulla facilisi morbi tempus. Elementum nibh tellus molestie nunc. Habitant morbi tristique senectus et. Vivamus at augue eget arcu dictum varius duis at. Nec feugiat in fermentum posuere urna nec tincidunt. Rutrum quisque non tellus orci ac. Pulvinar elementum integer enim neque volutpat ac tincidunt vitae. Enim facilisis gravida neque convallis. Mauris a diam maecenas sed enim ut sem. Ipsum dolor sit amet consectetur adipiscing. Amet dictum sit amet justo donec enim. Et molestie ac feugiat sed lectus vestibulum mattis ullamcorper. Est ullamcorper eget nulla facilisi.

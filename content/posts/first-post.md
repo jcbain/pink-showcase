@@ -5,7 +5,7 @@ author: "James Bain"
 image: "images/mountains.JPG"
 tags: ["something", "something eles"]
 categories : ["something", "and"]
-draft: true
+draft: false
 ---
 
 ## Just a Sample Title

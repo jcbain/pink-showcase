@@ -6,9 +6,28 @@
     <description>Recent content in Categories on Primary Colors</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Thu, 20 Feb 2020 10:38:25 -0700</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>and</title>
+      <link>/categories/and/</link>
+      <pubDate>Thu, 20 Feb 2020 10:38:25 -0700</pubDate>
+      
+      <guid>/categories/and/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>something</title>
+      <link>/categories/something/</link>
+      <pubDate>Thu, 20 Feb 2020 10:38:25 -0700</pubDate>
+      
+      <guid>/categories/something/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
