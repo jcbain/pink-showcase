@@ -1,0 +1,100 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+}
+
+#content {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+p {
+    font-family: 'Rokkitt', serif;
+    font-size: 5vh;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    transition: color 1s ease;
+}
+
+button {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    border-radius: 3px 3px 3px 3px;
+    background: $primary_blue;
+    box-shadow: 0 3px $dark_blue;
+    transition: none;
+    border: none;
+    display: inline-flex;
+    outline: none;
+    color: #fff;
+    transition: transform .3s, box-shadow .3s;
+}
+
+button:hover{
+    box-shadow: 0 7px $dark_blue;
+    transform: translate3d(0, -4px, 0);
+}
+
+button:active {
+    box-shadow: 0 0px $dark_blue;
+    transform: translate3d(0, 1px, 0);
+}
+
+.footnotes {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3.5vh;
+}
+
+
+.footnotes a{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3.5vh;
+    color: $primary_red;
+
+}
+
+.footnotes a:hover{
+    color: $primary_yellow;
+
+}
+
+.footnotes li::marker {
+    color: $primary_yellow;
+}
+
+
+
+@media (max-width: 640px) {
+    p {
+        font-size: 2vh;
+    }
+
+    .footnotes {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.5vh;
+    }
+    
+    
+    .footnotes a{
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.5vh;
+        color: $primary_red;
+    
+    }
+}

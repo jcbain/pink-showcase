@@ -1,0 +1,42 @@
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {{ hugo.Generator }}
+        {{  if eq .RelPermalink "/" }}
+            <title>{{ .Site.Title }}</title>
+        {{ else }}
+            <title>{{ .Title }}{{ with .Params.subtitle }} - {{ . }} {{ end }} - {{ .Site.Title }}</title>
+        {{ end }}
+
+    {{/*  FONT AWESOME  */}}
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous" /> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   
+    {{/*  GOOGLE FONTS  */}}
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rokkitt&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet"> 
+    
+    {{/*  CSS/SCSS  */}}
+    {{/*  <link href="{{"css/style.css" | relURL}}" rel="stylesheet" type="text/css">   */}}
+    {{ $cssOpts := (dict "targetPath" "css/main.css" "enableSourceMap" true ) }}
+    {{/*  {{ $styles := resources.Get "scss/main.scss" | resources.ExecuteAsTemplate "style.main.css" . | toCSS $cssOpts | minify | fingerprint }}      */}}
+    {{ $styles := resources.Get "scss/main.scss" | resources.ExecuteAsTemplate "style.main.css" . | toCSS $cssOpts | minify }} 
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
+
+
+    {{/*  Custom CSS  */}}
+    {{ range .Site.Params.custom_css }}
+        <link rel="stylesheet" href="{{ . | relURL }}" />
+    {{ end }}
+
+    {{ range .Site.Params.custom_js }}
+        <script src="{{ . | relURL }}"></script>
+    {{ end }}
+
+    {{/*  <link rel="icon" type="image/png" href="{{ .Site.Params.favicon | absURL }}" sizes="32x32">  */}}
+
+    {{ partial "mathjax_support.html" . }}
+</head>

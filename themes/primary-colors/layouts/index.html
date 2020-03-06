@@ -1,0 +1,56 @@
+{{ define "main" }}
+<section class="banner-main">
+    <div class="banner-info">
+        <h2>{{ .Site.Params.WelcomeMessage }}</h2>
+        <h2>{{ .Site.Params.WelcomeSecondary }}</h2>
+        <p>{{ .Site.Params.WelcomeDescription }}</p>
+    </div>
+
+    <div class="social-icons-container">
+        {{ range .Site.Params.Social }}
+        <a href="{{ .url }}" target="_blank" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}"{{ end }}>
+            <i class="{{.icon}}"></i>
+        </a>
+        {{ end }}
+    </div>
+
+    <img id="cloud1" class="floaty-item" src="images/cloud_yellow_01.png" alt="cloud">
+    <img id="cloud2" class="floaty-item" src="images/cloud_yellow_02.png" alt="cloud">
+
+</section>
+
+<div class="bio-container" data-aos="zoom-in-down">
+    <p class="bio">{{ .Site.Params.ShortBio }}</p>
+</div>
+
+<div class="post-showcase">
+    <h1 class="section-title" data-aos="zoom-in-down">Blog</h1>
+    <div class="post-container">
+        {{ range .Data.Pages }}
+        {{ if eq .Type "posts"}}
+        {{ $.Scratch.Set "counter" 0}}
+        {{ range first 3 .Pages.ByPublishDate.Reverse }}
+        {{ $counter := $.Scratch.Get "counter" }}
+        <div class="feature-post card" data-aos="fade-left" data-aos-offset="500" data-aos-delay="{{ $counter }}">
+            <div class="post-pic" {{ if .Params.Image }} style="background-image: url({{ .Params.Image | absURL }});" {{ end }}>
+            </div>
+            <div class="post-info">
+                <h2>{{ .Title }}</h2>
+                <p class="post-date">{{ .Date.Format "Monday Jan 2, 2006"}} </p>
+                <p class="post-summary">{{ .Summary }}</p>
+                <a href="{{ .RelPermalink }}">
+                    <button class="read-more-btn">
+                        READ…
+                    </button>
+                </a>
+            </div>
+        </div>
+        {{ $.Scratch.Add "counter" 300}}
+        {{ end }}
+        {{ end }}
+        {{ end }}
+    </div>
+</div>
+
+<script type="text/javascript" src="/js/main.bundle.js"></script>
+{{ end }}

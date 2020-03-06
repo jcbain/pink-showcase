@@ -1,0 +1,71 @@
+footer {
+    margin-top: 10vh;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-line {
+    width: 80vw;
+    height: 1vh;
+    border-top: .25vh solid #edece8;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80vw;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.contact-info p,a {
+    color: $dark_gray;
+    font-family: 'Oswald', sans-serif;
+    font-size: 4vh;
+    transition: color 1s ease;
+}
+
+.contact-info a:hover {
+    color: $primary_yellow;
+}
+
+.icons-container  i {
+    color: $dark_gray;
+    padding-right: 0.5vw;
+    font-size: 4vh;
+    transition: color 1s ease;
+}
+
+.icons-container  i:hover {
+    color: $primary_red;
+}
+
+.dog-image {
+    justify-self: end;
+}
+
+.dog-image img{
+    width: 30vw;
+}
+
+@media (max-width: 640px) {
+    footer {
+        height: 30vh;
+    }
+
+    .footer-line {
+        width: 90vw;
+    }
+    
+
+    .contact-info p,a {
+        font-size: 2vh;
+    }
+
+    .icons-container i {
+        font-size: 3vh;
+    }
+    
+}

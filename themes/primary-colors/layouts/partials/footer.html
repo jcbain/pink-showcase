@@ -1,0 +1,21 @@
+<footer>
+    <div class="footer-line"></div>
+        <div class="footer-content">
+            <div class="contact-info">
+                <p>{{ upper .Site.Params.Footer.Message }}</p>
+                <a href="mailto:{{ .Site.Params.Footer.Email }}">{{ upper .Site.Params.Footer.Email }}</a>
+                <p>{{ upper .Site.Params.Footer.City }}</p>
+                <div class="icons-container">
+                    {{ range .Site.Params.Social }}
+                    <a href="{{ .url }}" target="_blank" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}"{{ end }}>
+                        <i class="{{.icon}}"></i>
+                    </a>
+                    {{ end }}
+                </div>
+
+            </div>
+            <div class="dog-image">
+                <img id="dog" src="{{ print "images/" .Site.Params.Footer.FooterImage | relURL }}" alt="dog">
+            </div> 
+        </div>
+</footer>

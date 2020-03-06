@@ -1,0 +1,33 @@
+{{ $paginator := .Paginator }}
+
+<!-- If there's more than one page. -->
+<div class="pagination-container">
+{{ if gt $paginator.TotalPages 1 }}
+
+  <div class="pagination">
+    
+
+    <!-- Previous page. -->
+    {{ if $paginator.HasPrev }}
+    <div class="pagination-item pagination-item--previous">
+      <a href="{{ $paginator.Prev.URL }}" class="pagination-link pagination-link--previous">
+        {{/*  <i class="fas fa-angle-left" aria-hidden="true"></i>  */}}
+        <p>Newer</p>
+      </a>
+    </div>
+    {{ end }}
+  
+    <!-- Next page. -->
+    {{ if $paginator.HasNext }}
+    <div class="pagination-item pagination-item--next">
+      <a href="{{ $paginator.Next.URL }}" class="pagination-link pagination-link--next">
+        {{/*  <i class="fas fa-angle-right" aria-hidden="true"></i>  */}}
+        <p>Older</p>
+      </a>
+    </div>
+    {{ end }}
+
+</div><!-- .pagination -->
+{{ end }}
+</div><!-- .pagination-container -->
+

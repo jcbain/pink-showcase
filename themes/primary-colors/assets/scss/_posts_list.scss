@@ -1,0 +1,18 @@
+.post-list{
+    width: 80vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    align-content: space-between;
+}
+
+
+@media (max-width: 640px) { 
+    .post-list {
+        width: 90vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+}

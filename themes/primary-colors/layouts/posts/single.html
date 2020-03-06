@@ -1,0 +1,63 @@
+{{ define "main" }}
+    <section class="title-container">
+        <h1 class="single-title">{{ .Title }}</h1>
+    </section> 
+
+
+    <section class="single-meta">
+            <h3 class="single-author">{{ .Params.Author }}</h3> 
+            <h3 class="single-date">{{ .Date.Format "Monday Jan 2, 2006"}}</h3>
+    </section>
+
+    <section class="single-categories">
+        
+        
+        {{ with .Params.Categories }}
+            <p>categories </p>
+            {{ range . }}
+            <a class="link" href="{{"categories/" |absURL}}{{ . | urlize }}">{{ . }}</a>
+            {{ end }}
+        {{ end }}
+    </section>
+
+    <section class="single-tags">
+        
+        
+        {{ with .Params.Tags }}
+        <p>tags </p>
+        {{ range . }}
+        <a class="link" href="{{"tags/" |absURL}}{{ . | urlize }}">{{ . }}</a>
+        {{ end }}
+        {{ end }}
+    </section>
+
+    <section class="single-content">
+        {{ .Content }}
+    </section>
+
+    <section class="single-other">
+      <div class="footer-line"></div>
+      <h3>Why stop here? Keep reading...</h3>
+      <div class="single-other-opts">
+        <div class="next-post-container">
+          {{ with .NextInSection }}
+          <p>next post:</p>
+          <a class="next link" href="{{.Permalink}}"> {{.Title}}</a>
+          {{ end }}
+        </div>
+        <div class="previous-post-container">
+          {{ with .PrevInSection }}
+          <p>previous post:</p>
+          <a class="previous link" href="{{.Permalink}}"> {{.Title}}</a>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+
+    <section class="single-disqus">
+      {{ template "_internal/disqus.html" . }}
+    </section>
+
+
+
+{{ end }}

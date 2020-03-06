@@ -1,0 +1,17 @@
+<header class="nav">
+    <!-- LOGO -->
+    <div class="nav-logo-container">
+        <a href="{{ "/" | relURL }}" class="nav-logo">
+            <img src="{{ print "images/" .Site.Params.logo.url | relURL }}"
+                width="{{ .Site.Params.logo.width }}"
+                alt="{{ .Site.Params.logo.alt }}">
+        </a>
+    </div>
+
+    <div class="nav-links-container">
+        {{ range .Site.Menus.main }}
+        <p class="nav-links"><a href="{{ .URL }}">{{ .Name }}</a></p>
+        {{ end }}
+    </div>
+
+</header>

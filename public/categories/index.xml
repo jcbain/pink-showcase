@@ -1,42 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on James Chester Bain, PhD</title>
+    <title>Categories on Primary Colors</title>
     <link>/categories/</link>
-    <description>Recent content in Categories on James Chester Bain, PhD</description>
+    <description>Recent content in Categories on Primary Colors</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Jan 2020 22:37:13 -0700</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>fermentation</title>
-      <link>/categories/fermentation/</link>
-      <pubDate>Thu, 16 Jan 2020 22:37:13 -0700</pubDate>
-      
-      <guid>/categories/fermentation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R</title>
-      <link>/categories/r/</link>
-      <pubDate>Fri, 30 Dec 2016 21:49:57 -0700</pubDate>
-      
-      <guid>/categories/r/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>something</title>
-      <link>/categories/something/</link>
-      <pubDate>Fri, 30 Dec 2016 21:49:57 -0700</pubDate>
-      
-      <guid>/categories/something/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>

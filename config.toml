@@ -1,47 +1,56 @@
-baseurl = "/"
+baseURL = "/"
 languageCode = "en-us"
-title = "James Chester Bain, PhD"
-theme = "pink-plesiosaur-theme"
-googleAnalytics = ""
+title = "Primary Colors"
+theme = "primary-colors"
 disqusShortname = "jamescbain"
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
-paginate = 1
+paginate = 6
 pygmentsCodeFences = true
 pygmentsStyle = "solarized-light"
+summaryLength = 10
 
 [permalinks]
     post = "/:year/:monthname/:slug/"
 
+[[menu.main]]
+    name = "HOME"
+    url = "/"
+    weight = 10
+[[menu.main]]
+    name = "BLOG"
+    url = "/posts/"
+    weight = 20
+[[menu.main]]
+    name = "ABOUT"
+    url = "/about/"
+    weight = 30
+[[menu.main]]
+    name = "CONTACT"
+    url = "/contact/"
+    weight = 40
 
 [params]
-    welcomeMessage = "I'm James"
-    description = "I am a Computational Anthropologist currently disguised in Biology department as Postdoctoral Associate at the University of Calgary in <a target='_blank' href='https://yeamanlab.weebly.com/' class='link'>Sam Yeaman's lab</a>. I made the trek from the Midwestern United States to Canadadian Rockies to design and build a visualization atlas of complex evolutionary phenomena (biological and otherwise). As a researcher, I am interested in how city composition, human interaction and geography can influence peoples' behaviors and perceptions of others. I am also keen on understanding how the social sciences can leverage machine learning and computation to help answer these questions about human behavior. </br>If I am not in front of my computer then I can often be found in one of few situations: in the mountains with my wife and the pups, cooking or fermenting foodstuffs, or watching The Office, Gilmore Girls or anything from the Bachelor franchise. Doodling has also made its way back into my post-PhD life."
+    welcomeMessage = "Hi!"
+    welcomeSecondary = "I'm James."
+    welcomeDescription = "anthropologist | data visualist"
 
-    blogMessage = "I also blog from time to time"
-    blogDescription = "Here are some of my most recent posts. I typically blog on data viz or machine learning as these are the topics I spend most of my day exploring, but don't be surprised if you catch a smattering of posts on design, pop culture or my fermentation undertakings."
-    
-    copyrightPerson = "pink plesiosaur"
-    copyrightURL = "https://github.com/jcbain/pink-plesiosaur-theme"
-    
+    shortBio = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
     disableMathJax = false
     MathJaxCDN = "//cdnjs.cloudflare.com/ajax/libs"
     MathJaxVersion = "2.7.5"
 
-    # path to the favicon, under "static"
-    favicon = "/images/dog_favicon.png"
-    
-    # Custom CSS
-    custom_css = []
-    
-    # Custom JS
-    custom_js = []
+[params.logo]
+    url = "personal_logo_without_name.png"
+    width = 75
+    alt = "logo"
 
-[params.contact]
-    message = "Have a question? Reach out"
-    city = "Calgary, AB 🇨🇦"
+[params.footer]
+    message = "Get in touch"
+    footerImage = "dog.png"
     email = "jamescbain@gmail.com"
-    url = "mailto:jamescbain@gmail.com"
- 
+    city = "Calgary, AB"
+
+
 [[params.social]]
     name = "Github"
     icon = "fab fa-github fa-2x"
@@ -62,10 +71,3 @@ pygmentsStyle = "solarized-light"
     name = "Instagram"
     icon = "fab fa-instagram fa-2x"
     url = "https://www.instagram.com/jamescbain/"
-[[params.social]]
-    name = "Blog"
-    icon = "fas fa-blog fa-2x"
-    url = "/post"
-
-
-
