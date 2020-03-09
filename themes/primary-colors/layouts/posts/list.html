@@ -5,7 +5,7 @@
 </section>
 <section class="posts-showcase">
     <div class="post-list">
-        {{ range .Paginator.Pages }}
+        {{ range .Paginator.Pages.ByPublishDate.Reverse }}
         <div class="feature-post card">
             <div class="post-pic" {{ if .Params.Image }} style="background-image: url({{ .Params.Image | absURL }});" {{ end }}>
             </div>

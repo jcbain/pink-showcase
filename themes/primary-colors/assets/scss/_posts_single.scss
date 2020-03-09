@@ -97,9 +97,15 @@ section.single-tags  a{
     align-self: center;
 }
 
-.single-content h1,h2,h3,h4,h5,h6 {
+.single-content h1,h2,h3,h4,h5,h6{
     font-family: 'Crete Round', serif;
 
+}
+
+.single-content a {
+    font-family: 'Rokkitt', serif;
+    font-size: 4vh;
+    color: $primary_yellow;
 }
 
 .single-content img {
