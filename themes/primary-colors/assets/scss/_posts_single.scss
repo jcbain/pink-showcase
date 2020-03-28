@@ -127,18 +127,22 @@ section.single-tags  a{
     margin-bottom: 2vw;
 }
 
-.highlight pre code[data-lang]::before { 
-    content: attr(data-lang); 
-    display: block; 
-    background-color: $primary_yellow;
-    padding-left: 1vw;
-    border-top-right-radius: .5vw;
-    border-top-left-radius: .5vw;
-}
+// .highlight pre code[data-lang]::before { 
+//     content: attr(data-lang); 
+//     display: block; 
+//     background-color: $primary_yellow;
+//     padding-left: 1vw;
+//     border-top-right-radius: .5vw;
+//     border-top-left-radius: .5vw;
+// }
 
 .highlight pre {
     background-color: #fff !important;
     white-space: pre-wrap;
+    font-size: 2.5vh;
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -o-pre-wrap; 
 }
 
 .single-other {
@@ -196,7 +200,7 @@ section.single-tags  a{
     // }
     .single-title {
         width: 90vw;
-        font-size: 9vh;
+        font-size: 7vh;
     }
 
     .single-meta {
@@ -267,6 +271,14 @@ section.single-tags  a{
 
     .single-other p {
         font-size: 1.5vh;
+    }
+
+    .highlight pre {
+        font-size: 1.5vh;
+    }
+
+    .single-content a {
+        font-size: 2vh;
     }
     
     .single-other a {

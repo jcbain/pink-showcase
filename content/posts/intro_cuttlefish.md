@@ -1,20 +1,15 @@
 +++
-draft = true
-image = "img/post6/cuttlefish2.png"
+draft = false
+image = "images/posts/cuttlefish2.png"
 date = "2018-07-30T20:11:33-05:00"
 title = "Introducing Cuttlefish"
-weight = 11
+tags = ["color theory", "color palettes"]
+categories = ["R", "tidyverse", "software"]
 +++
 
+
+
 I created something new. Actually, I <u>am creating</u> something new and I am proud to say that I finally got to name something after my favorite cephalopod, the humble cuttlefish. Don't know what a cuttlefish is? 
-
-*here's one*
-
-<iframe class="left-img" src="https://giphy.com/embed/FmT1crQG1skOA" width="480" height="365" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/sea-FmT1crQG1skOA"></p>
-
-*...and here's another*
-
-<iframe class="right-img" src="https://giphy.com/embed/Z1h7gtXSQRyTe" width="480" height="301" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/cuttlefish-Z1h7gtXSQRyTe"></p>
 
 They're basically chameleon squids but more chameleon than a chameleon and more squid than a squid and they obviously can do things with color that hummingbirds do with flight.
 
@@ -22,7 +17,8 @@ They're basically chameleon squids but more chameleon than a chameleon and more 
 
 Imagine we have the following image.
 
-![Chinese Latterns](/img/post6/chinese_latterns.png)
+
+<img src='/images/posts/chinese_latterns.png' alt='Chinese Latterns' class='right-img'>
 
 The print is Chinese and the artist is unknown. You can read up more about the piece [here](http://blogs.bl.uk/asian-and-african/2014/05/british-library-releases-over-200-japanese-and-chinese-prints-into-public-domain.html). The colors are simply perfect for demonstrations purposes. 
 
@@ -43,7 +39,7 @@ cols <- create_palette("chinese_latterns.png", n=5)
 # scales to display the palette
 scales::show_col(cols)
 ```
-![Palette 1](/img/post6/palette_1.png)
+<img src='/images/posts/palette_1.png' alt='palette' class='left-img'>
 
 Note, if you are following along, you might realize that the color palette you were given is different than the color palette that I'm displaying here. That is because `cuttlefish`'s `find_segments` function randomly picks a color from all of the unique colors in the image as a starting point. These colors are represented in the HSV (hue saturation value) color space because the color hues are projected onto an angular dimension from 0˚ to 360˚. This is important because I wanted to maximize the distance between segments to avoid overlap in colors when segmenting the color palette. In other words, I wanted colors to be 360˚/n away from one another. Now, you may be asking, "What if there isn't a color that is 360˚/n away from color *i*?" Well, I simply take the closest color to that distance away from color *i*. Now you could be thinking, "What if multiple colors are equidistant?" Simple, since all colors are unique from the possible selection, you can either take the farthest in terms of saturation and value of the subset of close colors or the closest by specifying `max.distance` parameter. `TRUE` will return the most distant by saturation and value and `FALSE` will return the nearest.  This was a design decision and some might want colors of a more similar saturation. For example, you could do
 
@@ -53,7 +49,8 @@ cols <- create_palette("chinese_latterns.png", 5, max.distance = FALSE)
 
 Now, occasionally images won't contain a distribution of a lot of colors (although the image probably has a bunch of unique colors). This is often the case with logos. For this, using the default segmentation above might not provide what is wanted. Instead, I've built an option to find the most prominent colors in the image by simply specifying `prominent.ord=TRUE` in the `create_palette` function. Take the NPR logo for instance.
 
-![NPR](/img/post6/npr_logo.png)
+<img src='/images/posts/npr_logo.png' alt='Chinese Latterns' class='right-img'>
+
 
 ```splus
 cols <- create_palette("npr_logo.png", n = 4, prominent.ord = TRUE)
@@ -63,8 +60,12 @@ scales::show_col(cols)
 
 Would provide...
 
-![Palette 2](/img/post6/palette_2.png)
+<img src='/images/posts/palette_2s.png' alt='Chinese Latterns' class='left-img'>
+
 
 I know that there isn't a whole lot of functionality quite yet but I will be building it up over the months to come. There is one final bit though before closing up this post. Like any respectable and non-respectable `R` package, `cuttlefish` needed a hex sticker so a hex sticker I created...
 
-![hex](/img/post6/cuttlefish2.png)
+<img src='/images/posts/cuttlefish2.png' alt='Chinese Latterns' class='left-img'>
+
+
+[^boring]: Take, for example, the name of this here post. It has the vavavoom of the vocal fry on NPR. It is essentially the title equivalent of a bowl of oatmeal. </n>One notable exception to this otherwise bleak lack of talent is my ability to come up with timeless chidren's names. Don't ask me what they are though because I prefer to mitigate any critisms of my monumental life decisions.
