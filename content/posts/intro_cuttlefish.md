@@ -39,7 +39,7 @@ cols <- create_palette("chinese_latterns.png", n=5)
 # scales to display the palette
 scales::show_col(cols)
 ```
-<img src='/images/posts/palette_1.png' alt='palette' class='left-img'>
+<img src='/images/posts/palette_1.png' alt='palette' class='left-img img-small'>
 
 Note, if you are following along, you might realize that the color palette you were given is different than the color palette that I'm displaying here. That is because `cuttlefish`'s `find_segments` function randomly picks a color from all of the unique colors in the image as a starting point. These colors are represented in the HSV (hue saturation value) color space because the color hues are projected onto an angular dimension from 0˚ to 360˚. This is important because I wanted to maximize the distance between segments to avoid overlap in colors when segmenting the color palette. In other words, I wanted colors to be 360˚/n away from one another. Now, you may be asking, "What if there isn't a color that is 360˚/n away from color *i*?" Well, I simply take the closest color to that distance away from color *i*. Now you could be thinking, "What if multiple colors are equidistant?" Simple, since all colors are unique from the possible selection, you can either take the farthest in terms of saturation and value of the subset of close colors or the closest by specifying `max.distance` parameter. `TRUE` will return the most distant by saturation and value and `FALSE` will return the nearest.  This was a design decision and some might want colors of a more similar saturation. For example, you could do
 
@@ -49,7 +49,7 @@ cols <- create_palette("chinese_latterns.png", 5, max.distance = FALSE)
 
 Now, occasionally images won't contain a distribution of a lot of colors (although the image probably has a bunch of unique colors). This is often the case with logos. For this, using the default segmentation above might not provide what is wanted. Instead, I've built an option to find the most prominent colors in the image by simply specifying `prominent.ord=TRUE` in the `create_palette` function. Take the NPR logo for instance.
 
-<img src='/images/posts/npr_logo.png' alt='Chinese Latterns' class='right-img'>
+<!-- <img src='/images/posts/npr_logo.png' alt='NPR logo' class='right-img'> -->
 
 
 ```splus
@@ -60,12 +60,12 @@ scales::show_col(cols)
 
 Would provide...
 
-<img src='/images/posts/palette_2s.png' alt='Chinese Latterns' class='left-img'>
+<img src='/images/posts/palette_2.png' alt='NPR palette' class='right-img img-small'>
 
 
-I know that there isn't a whole lot of functionality quite yet but I will be building it up over the months to come. There is one final bit though before closing up this post. Like any respectable and non-respectable `R` package, `cuttlefish` needed a hex sticker so a hex sticker I created...
 
-<img src='/images/posts/cuttlefish2.png' alt='Chinese Latterns' class='left-img'>
+I know that there isn't a whole lot of functionality quite yet but I will be building it up over the months to come. There is one final bit though before closing up this post. Like any respectable and non-respectable `R` package, `cuttlefish` needed a hex sticker so a hex sticker I created...which is the blog image for this post!
+
+<!-- <img src='/images/posts/cuttlefish2.png' alt='cuttlefish sticker' class='left-img'> -->
 
 
-[^boring]: Take, for example, the name of this here post. It has the vavavoom of the vocal fry on NPR. It is essentially the title equivalent of a bowl of oatmeal. </n>One notable exception to this otherwise bleak lack of talent is my ability to come up with timeless chidren's names. Don't ask me what they are though because I prefer to mitigate any critisms of my monumental life decisions.

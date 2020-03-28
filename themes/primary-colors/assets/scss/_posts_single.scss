@@ -108,12 +108,10 @@ section.single-tags  a{
     color: $primary_yellow;
 }
 
-.single-content img {
-    max-width: 40vw;
-    display: inline;
-}
 
 .right-img {
+    max-width: 40vw;
+    display: inline;
     float: right;
     margin-left: 2vw;
     margin-top: 2vw;
@@ -121,11 +119,18 @@ section.single-tags  a{
 }
 
 .left-img {
+    max-width: 40vw;
+    display: inline;
     float: left;
     margin-right: 2vw;
     margin-top: 2vw;
     margin-bottom: 2vw;
 }
+
+.img-small {
+    max-width: 20vw;
+}
+
 
 // .highlight pre code[data-lang]::before { 
 //     content: attr(data-lang); 
