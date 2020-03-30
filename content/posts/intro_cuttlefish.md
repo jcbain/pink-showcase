@@ -1,7 +1,7 @@
 +++
 draft = false
 image = "images/posts/cuttlefish2.png"
-backgroundColor = "#8c34eb"
+backgroundColor = "#fc0390"
 date = "2018-07-30T20:11:33-05:00"
 title = "Introducing Cuttlefish"
 tags = ["color theory", "color palettes"]

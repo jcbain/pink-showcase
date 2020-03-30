@@ -1,20 +1,22 @@
 +++
-draft = true
+draft = false
+image = "images/posts/chi_right.gif"
+backgroundColor = "#fcba03"
 date = "2018-06-18T23:30:12-05:00"
 title = "Coin Flip Probability with Python"
 tags = ["probability"]
 categories = ["python"]
 +++
 
-I'm writing up my dissertation...but occasionally I need a distraction. Don't get me wrong, I find studying hate speech very fascinating, but in all honesty, it gets to be a bit much sometimes. The world can be a depressing place. Plus, it's a dissertation; distractions are welcome in any flavor.
-
-Today my distraction came in the form of a Tweet by David Robinson demonstrating how flipping a coin and getting a heads and then another heads takes 6 flips on average while a heads then a tails only takes 4.
+I would like to extend a sincere thank you to David Robinson for ruining my productivity this evening. Normally, Twitter is my study population, which makes thumbing through tweet after tweet field work 🤷‍♂️. But this evening I stumbled across this gem that set me off into a trajectory that had nothing to do with my conventional social media ventures, you know identifying hate speech or building computational linguistic models. Below is the tweet in question...
 
 {{< tweet 1008409373423611904 >}}
 
-He did this using `tidyverse` functions and then using base-`R` matrix operations. Well, I wanted to create the `Python` version because of said dissertation. I did so by creating a set of functions. 
+I'm no statitician but I am generally dealing in probability daily and, admittedly, this one got me. To summarize, when using a fair coin, getting two heads in a row takes 6 flips on average while getting a heads and then a tails only takes four. What isn't written but implied in this tweet is that this phenomenon is unintuitive. 
 
-The first is simply a function to simulate flipping a fair coin...
+The second section of his tweet is a simulated demonstration using `R`, which brings me to the crux of this post. I don't really intend on explaining **why** this phenoment occurs but rather whether I can translate this simulation to another popular "data science" programming language, `python`. Spoiler alert, it can be done. Additionally, can I extend the functionality to match any arbitrary sequence of flips? Hmm... let's find out whether I would tease something in a post and not deliver some sort of solution. 
+
+First things first, I need a function to simulate the flipping of a fair coin. I could just return `true` or `false` but I often find being more explicit with respect to a certain task makes reading the program easier as time passes.
 
 ```python
 import numpy as np

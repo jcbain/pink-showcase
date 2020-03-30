@@ -9,7 +9,7 @@
         {{ range .Paginator.Pages }}
         <a href="{{ .RelPermalink }}">
             <div class="feature-post card">
-                <div class="post-pic" {{ if .Params.Image }} style="background-image: url({{ .Params.Image | absURL }});" {{ end }}>
+                <div class="post-pic" {{ if .Params.Image }} style="background-image: url({{ .Params.Image | absURL }}); background-color: {{ .Params.BackgroundColor }};" {{ end }}>
                 </div>
                 <div class="post-info">
                     <h2>{{ .Title }}</h2>
