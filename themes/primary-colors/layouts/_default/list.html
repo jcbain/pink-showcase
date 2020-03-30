@@ -7,20 +7,19 @@
 <section class="posts-showcase">
     <div class="post-list">
         {{ range .Paginator.Pages }}
-        <div class="feature-post card">
-            <div class="post-pic" {{ if .Params.Image }} style="background-image: url({{ .Params.Image | absURL }});" {{ end }}>
+        <a href="{{ .RelPermalink }}">
+            <div class="feature-post card">
+                <div class="post-pic" {{ if .Params.Image }} style="background-image: url({{ .Params.Image | absURL }});" {{ end }}>
+                </div>
+                <div class="post-info">
+                    <h2>{{ .Title }}</h2>
+                    <p class="post-date">{{ .Date.Format "Monday Jan 2, 2006"}} </p>
+                    <p class="post-summary">{{ .Summary }}</p>
+
+
+                </div>
             </div>
-            <div class="post-info">
-                <h2>{{ .Title }}</h2>
-                <p class="post-date">{{ .Date.Format "Monday Jan 2, 2006"}} </p>
-                <p class="post-summary">{{ .Summary }}</p>
-                <a href="{{ .RelPermalink }}">
-                    <button class="read-more-btn">
-                        READ…
-                    </button>
-                </a>
-            </div>
-        </div>
+        </a>
         {{ end }}
     </div>
 </section>

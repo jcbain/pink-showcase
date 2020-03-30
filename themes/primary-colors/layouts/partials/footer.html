@@ -18,4 +18,9 @@
                 <img id="dog" src="{{ print "images/" .Site.Params.Footer.FooterImage | relURL }}" alt="dog">
             </div> 
         </div>
+        <div class="footer-line"></div>
+        <div class="copyright-container">
+            <p class="built-by-statement">I built this site with <a href="https://gohugo.io/">Hugo</a></p>
+            <p class="copyright-statement">{{ .Site.Copyright | safeHTML }}</p>
+        </div>
 </footer>
