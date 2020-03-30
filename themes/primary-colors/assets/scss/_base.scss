@@ -30,6 +30,10 @@ a {
     transition: color 1s ease;
 }
 
+ol {
+    font-family: 'Rokkitt', serif;
+}
+
 button {
     text-align: center;
     justify-content: center;
@@ -55,6 +59,7 @@ button:active {
     box-shadow: 0 0px $dark_blue;
     transform: translate3d(0, 1px, 0);
 }
+
 
 .footnotes {
     font-family: 'Josefin Sans', sans-serif;
