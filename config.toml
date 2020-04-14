@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "Primary Colors"
 theme = "primary-colors"
 disqusShortname = "jamescbain"
-paginate = 6
+paginate = 12
 pygmentsCodeFences = true
 pygmentsStyle = "solarized-light"
 summaryLength = 10
@@ -32,9 +32,9 @@ copyright = "© 2017 - 2020 James Bain - All rights reserved"
 [params]
     welcomeMessage = "Hi!"
     welcomeSecondary = "I'm James."
-    welcomeDescription = "anthropologist | data visualist"
+    welcomeDescription = "computational anthropologist | data viz"
 
-    shortBio = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    shortBio = "Hey there, I'm James! I'm a computational anthropologist whose interested in how computational methods can be used to research and better understand what underpins human behavior. More specifically, my research revolves global patterns of migration and understanding the rhetoric surrounding the topic of immigration. I also believe in making science and research accessable to the general public and spend quite a bit of my time designing and developing software to make science more digestable."
 
     disableMathJax = false
     MathJaxCDN = "//cdnjs.cloudflare.com/ajax/libs"

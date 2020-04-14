@@ -24,7 +24,7 @@ Let me paint this picture with a couple of examples. Say that I have an image wh
 2. The colors must be drawn from the colorspace of the image provided. Colors shouldn't be intermediate values that don't exist in the image.
 3. There needs to be some flexibility in the ability to choose how color palettes are created, which may or may not come into conflict with the first two bullet points above.
 
-<img src='/images/posts/chinese_latterns.png' alt='Chinese Latterns' class='right-img'>
+<img src='/images/posts/chinese_latterns.png' alt='Chinese Latterns' >
 
 Neat! A blueprint to start thinking of algorithm. But, before I begin fleshing out what could be the most attention polarizing section of this post, just a disclaimer: This is just **a** solution, not **the** solution. More than likely, the following words **aren't** the best solution. At some point the dissertation has to get written and side projects have to be just that.
 
@@ -44,11 +44,11 @@ scales::show_col(cols)
 
 Thanks to the `scales` package, the final line should render a color swatch with the selected colors. 
 
-<img src='/images/posts/palette_1.png' alt='palette' class='left-img img-small'>
+<img src='/images/posts/palette_1.png' alt='palette'>
 
 There is one more question that I, up until this point, simply omitted. What happens if two colors are the next best option? This is where the "S" (saturation) and "V" (value) from HSV come into play. Up until now, these values in the color were completely ignored but this scenario is bound to play out a couple times over the next millenia. The "S" and "V" gives me an out, a way to chose one over the other in the steps of the algorithm. There is a third parameter, `max.distance`, which essentially chooses the saturation and value farthest away from the original color in these respective spaces if `max.distance` is specified to be `TRUE`. `FALSE`, as you may have guessed, will return the nearest.
 
-<img src='/images/posts/palette_2.png' alt='NPR palette' class='right-img img-small'>
+<img src='/images/posts/palette_2.png' alt='NPR palette' >
 
 Okay, so condition #1 and #2 are met, at least a rough draft, and I have even managed to drag out a caveat, but what about condition #3. You, as a user, may want to extract the most prominent colors of an image instead. Imagine a logo where the number of colors are limited to only a few. I'm imagining the NPR logo...the classic blue, orange, white and black. In this scenario, I would want to turn off the mechanism that makes conditions #1 and #2 tick and instead get the most prominent colors (*prominent* here refers the color with the most pixels) of the image. Well, the `create_palette()` function comes with a parameter, `prominent.ord`, that when set to `TRUE` will do just that. Below's some sample code to help you visualize...
 
